@@ -47,16 +47,13 @@ window.addEventListener('resize', () => {
 
 const toggler = document.getElementById('theme-toggle');
 let pictureVar = document.getElementById('logo-img');
-let iconVar = document.getElementById('page-icon');
 
 toggler.addEventListener('change', function () {
     if (this.checked) {
         document.body.classList.add('dark');
         pictureVar.setAttribute('src', 'images/logo.png');
-        iconVar.setAttribute('href', 'images/logo.png');
     } else {
         document.body.classList.remove('dark');
         pictureVar.setAttribute('src', 'images/logo-1.png');
-        iconVar.setAttribute('href', 'images/logo-1.png');
     }
 });
